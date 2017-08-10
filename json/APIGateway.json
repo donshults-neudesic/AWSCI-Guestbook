@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "2017-08-08T18:36:42Z",
-    "title": "guestbook"
+    "title": "guestbook1"
   },
   "host": "nrekvjn301.execute-api.us-west-2.amazonaws.com",
   "basePath": "/prod",
