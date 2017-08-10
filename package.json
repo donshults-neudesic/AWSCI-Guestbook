@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/donshults-neudesic/AWSCI-Guestbook#readme",
   "dependencies": {
-    "aws-sdk": "^2.94.0"
+    "aws-sdk": "^2.94.0",
+    "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "del": "^3.0.0",
