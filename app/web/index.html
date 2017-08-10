@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+<body>
+<h2>Latest Guestbook Entries:</h2>
+<div id="entries">
+
+</div>
+
+<form>
+    <label for="msg">Message</label>
+    <textarea id="msg"></textarea>
+    <button id="submitButton">Submit</button>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript">
+    var API_URL = 'https://nrekvjn301.execute-api.us-west-2.amazonaws.com/prod/entries';
+    $(document).ready(function(){
+        $.ajax({
+            type:'GET',
+            url: API_URL,
+            success: function(data){
+                $('#entries').html('');
+                data.Items.forEach(function(guestbookItem) {
+                    $('#entries').append('<p>'+ guestbookItem.message + '</p>');  
+                })
+            }
+        });
+    });
+
+    $('#submitButton').on('click', function(){
+        $.ajax({
+            type:'POST',
+            url: API_URL,
+            data: JSON.stringify({"message": $('#msg').val()}),
+            contentType: "application/json",
+            success: function(data){
+                location.reload();
+            }
+        });
+        return false;
+    });
+</script>
+
+</body>
+</html>

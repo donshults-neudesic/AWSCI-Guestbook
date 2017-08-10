@@ -1,0 +1,33 @@
+{
+  "name": "awsci-guestbook",
+  "version": "1.0.0",
+  "description": "Sample CI Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donshults-neudesic/AWSCI-Guestbook.git"
+  },
+  "author": "Don Shults",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donshults-neudesic/AWSCI-Guestbook/issues"
+  },
+  "homepage": "https://github.com/donshults-neudesic/AWSCI-Guestbook#readme",
+  "dependencies": {
+    "aws-sdk": "^2.94.0"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-aws-lambda": "^1.0.11",
+    "gulp-install": "^1.1.0",
+    "gulp-s3-upload": "^1.6.6",
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^4.0.0",
+    "lite-server": "^2.3.0",
+    "run-sequence": "^2.1.0"
+  }
+}
