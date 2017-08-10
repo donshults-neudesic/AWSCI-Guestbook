@@ -8,7 +8,7 @@ exports.handler = function(e, ctx, callback){
     var params = {
         Item: {
             date: Date.now(),
-            message: "I love your website!"
+            message: e.message
         },
         TableName: 'guestbook'
     };
