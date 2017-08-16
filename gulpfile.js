@@ -169,7 +169,7 @@ gulp.task('default', function (callback) {
         'lambda1',
         'lambda2',
         'uploadweb',
-        'apiupload',
+       /* 'apiupload',*/
         callback
     );
 });
