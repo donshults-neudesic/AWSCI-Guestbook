@@ -165,11 +165,11 @@ gulp.task('default', function (callback) {
         'npm',
         'zip',
         'uploadguestbook',
-        /*'uploadswagger',*/
+        /*'uploadswagger',
         'lambda1',
         'lambda2',
         'uploadweb',
-       /* 'apiupload',*/
+        'apiupload',*/
         callback
     );
 });
